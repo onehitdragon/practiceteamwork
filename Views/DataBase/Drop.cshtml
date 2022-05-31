@@ -1,0 +1,23 @@
+<script>
+    @{
+        bool isSuccess = (bool)ViewData["isSuccess"];
+        if(isSuccess){
+            <text>
+                alert("Xóa database thành công!");
+            </text> 
+        }
+        else{
+            <text>
+                alert("Xóa database thất bại!");
+            </text>
+        }
+    }
+    
+</script>
+@if(!isSuccess){
+    <text>
+        <div style="color: red;">
+            <p>Chưa mở máy chủ xampp (apache and mysqli)</p>
+        </div>
+    </text>
+}

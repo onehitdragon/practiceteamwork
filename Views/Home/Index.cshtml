@@ -1,0 +1,165 @@
+﻿@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/home.css"/>
+<link rel="stylesheet" href="~/css/homeAnimation.css"/>
+<link rel="stylesheet" href="~/css/callvideo.css"/>
+<div class="body">
+    <div class="body__main">
+        <div class="body-left">
+            <div class="body-left__before"></div>
+            <div class="body-left__head">
+                <img class="avatar" src="@ViewBag.AvatarUrl">
+                <div class="name-area">
+                    <p class="name">@ViewBag.Name</p>
+                    <p class="status">
+                        <i class="fa-solid fa-circle"></i>
+                        Trực tuyến
+                    </p>
+                    <div class="status-menu">
+                        <button type="button" name="online">
+                            <i class="fa-solid fa-circle  icon-status--green"></i>
+                            <span>Trực tuyến</span>
+                        </button>
+                        <button type="button" name="offline">
+                            <i class="fa-solid fa-moon  icon-status--yellow"></i>
+                            <span>Tạm vắng</span>
+                        </button>
+                        <button type="button" name="verybusy">
+                            <i class="fa-solid fa-circle-minus  icon-status--red"></i>
+                            <span>Rất bận</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="menu-button">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+            </div>
+            <div class="body-left__search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Nhập nội dung tìm kiếm...">
+                <p class="line"></p>
+            </div>
+            <div class="body-left__conversations">
+                @* conversation-item *@
+            </div>
+        </div>
+        <div class="body-right">
+            <div class="body-right__before"></div>
+            @* <div class="body-right__head">
+                <img class="avatar" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-5&_nc_sid=12b3be&_nc_ohc=mXSVjyx-MnoAX_gAjnU&_nc_ht=scontent.fhan14-2.fna&edm=AP4hL3IEAAAA&oh=00_AT9KSVvPavEIVn8nx75lC03QJK11ioBmWcJpgV1Md7toNw&oe=6241ED99">
+                <div class="info-area">
+                    <p class="name">User Demo</p>
+                    <p class="status">Đang gõ...</p>
+                </div>
+                <div class="button-area">
+                    <button type="button" name="profile">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button type="button" name="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-right__messages">
+                <div class="message">
+                    <img class="avatar" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-5&_nc_sid=12b3be&_nc_ohc=mXSVjyx-MnoAX_gAjnU&_nc_ht=scontent.fhan14-2.fna&edm=AP4hL3IEAAAA&oh=00_AT9KSVvPavEIVn8nx75lC03QJK11ioBmWcJpgV1Md7toNw&oe=6241ED99">
+                    <div class="content">
+                        <p>who is a hero</p>
+                        <p>who is a hero</p>
+                        <p>who is a hero dassssssssssssssssss</p>
+                        <div class="name-time">
+                            <span class="name">User demo</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span class="time">9:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message message--mymessage">
+                    <img class="avatar" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-5&_nc_sid=12b3be&_nc_ohc=mXSVjyx-MnoAX_gAjnU&_nc_ht=scontent.fhan14-2.fna&edm=AP4hL3IEAAAA&oh=00_AT9KSVvPavEIVn8nx75lC03QJK11ioBmWcJpgV1Md7toNw&oe=6241ED99">
+                    <div class="content">
+                        <p>who is a hero</p>
+                        <p>who is a hero</p>
+                        <p>who is a hero asdasdddddddddddd</p>
+                        <div class="name-time message--myname-time">
+                            <i class="status-load fa-solid fa-circle-notch"></i>
+                            <span class="name">User demo</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span class="time">9:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message message--mymessage">
+                    <img class="avatar" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-5&_nc_sid=12b3be&_nc_ohc=mXSVjyx-MnoAX_gAjnU&_nc_ht=scontent.fhan14-2.fna&edm=AP4hL3IEAAAA&oh=00_AT9KSVvPavEIVn8nx75lC03QJK11ioBmWcJpgV1Md7toNw&oe=6241ED99">
+                    <div class="content message--mycontent">
+                        <p>who is a hero asdasdddddddddddd dasssssss dasdasd adasdsa asdasdsa asdasdas asd</p>
+                        <div class="name-time message--myname-time">
+                            <i class="status-success fa-solid fa-check"></i>
+                            <span class="name">User demo</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span class="time">9:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message message--mymessage">
+                    <img class="avatar" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-5&_nc_sid=12b3be&_nc_ohc=mXSVjyx-MnoAX_gAjnU&_nc_ht=scontent.fhan14-2.fna&edm=AP4hL3IEAAAA&oh=00_AT9KSVvPavEIVn8nx75lC03QJK11ioBmWcJpgV1Md7toNw&oe=6241ED99">
+                    <div class="content message--mycontent">
+                        <p>who is a hero asdasdddddddddddd dasssssss dasdasd adasdsa asdasdsa asdasdas asd</p>
+                        <div class="name-time message--myname-time">
+                            <i class="status-fail fa-solid fa-xmark"></i>
+                            <span class="name">User demo</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span class="time">9:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <img class="avatar" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-5&_nc_sid=12b3be&_nc_ohc=mXSVjyx-MnoAX_gAjnU&_nc_ht=scontent.fhan14-2.fna&edm=AP4hL3IEAAAA&oh=00_AT9KSVvPavEIVn8nx75lC03QJK11ioBmWcJpgV1Md7toNw&oe=6241ED99">
+                    <div class="content">
+                        <p>who is a hero</p>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <div class="name-time">
+                            <span class="name">User demo</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span class="time">9:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <img class="avatar" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-5&_nc_sid=12b3be&_nc_ohc=mXSVjyx-MnoAX_gAjnU&_nc_ht=scontent.fhan14-2.fna&edm=AP4hL3IEAAAA&oh=00_AT9KSVvPavEIVn8nx75lC03QJK11ioBmWcJpgV1Md7toNw&oe=6241ED99">
+                    <div class="content">
+                        <p>The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box</p>
+                        <p class="loading">
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle"></i>
+                        </p>
+                        <div class="name-time">
+                            <span class="name">User demo</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span class="time">9:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div> *@
+            @* <div class="body-right__send">
+                <button type="button" name="add-file">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <input type="text" placeholder="Nhập tin nhắn...">
+                <button type="button" name="icon">
+                    <i class="fa-solid fa-face-smile"></i>
+                </button>
+            </div> *@
+        </div>
+    </div>
+</div>
+<script>
+    let conversationList = @Html.Raw(ViewBag.ListConversation);
+    let user = @Html.Raw(ViewBag.User);
+    let friendList = @Html.Raw(ViewBag.ListFriending);
+    let requestingList = @Html.Raw(ViewBag.ListQuesting);
+</script>
+
+<script src="~/lib/signalr/signalr.js"></script>
+<script type="module" src="~/js/home/home.js"></script>

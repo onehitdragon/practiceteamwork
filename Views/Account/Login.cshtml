@@ -1,0 +1,58 @@
+﻿@using project.Models;
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    Account account = ViewData["account"] as Account;
+}
+<link rel="stylesheet" href="~/css/login.css"/>
+<div class="body">
+    <div class="title">
+        Web Chat Trực Tuyến
+    </div>
+    <div class="body__main">
+        <p class="title">Đăng Nhập</p>
+        <p class="title-2">Đăng nhập với</p>
+        <div class="other-login">
+            <div>
+                <i class="fa-brands fa-facebook-f"></i>
+                <a>Facebook</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-google"></i>
+                <a>Google</a>
+            </div>
+        </div>
+        <p class="title-2">Hoặc sử dụng tài khoản của bạn</p>
+        <form class="login-form">
+            <div class="login-form__row login-form__row--normal">
+                <input name="Email" type="text" value="@account.Email" placeholder="Email">
+            </div>
+            <div class="login-form__row login-form__row--normal">
+                <input name="Password" type="password" value="@account.Password" placeholder="Mật khẩu">
+            </div>
+            <div class="login-form__row login-form__row--custom">
+                <div>
+                    @if (!String.IsNullOrEmpty(account.Password))
+                    {
+                        <text><input name="SavePassword" type="checkbox" checked value="true"/></text>
+                    }
+                    else{
+                        <text><input name="SavePassword" type="checkbox" value="true"/></text>
+                    }
+                    Nhớ mật khẩu
+                </div>
+                <div>
+                    <a id="forgetPassword" href="/Account/ForgetPassword">Quên mật khẩu</a>
+                </div>
+            </div>
+            <img class="loading" src="~/img/gif/loader.gif">
+            <button type="button" name="login">Đăng nhập</button>
+            <button type="button" name="register">Đăng ký</button>
+        </form>
+    </div>
+</div>
+
+<script type="module" src="~/js/login/login.js"></script>
+<script type="module" src="~/js/login/loginGoogle.js"></script>
+<meta name="google-signin-client_id" content="685022627226-qtgim2ke5al80ljtqqfig4anfhed5110.apps.googleusercontent.com">
+<script type="module" src="https://apis.google.com/js/platform.js?onload=renderButton"></script>
+<script type="module" src="~/js/login/loginFacebook.js"></script>

@@ -1,0 +1,47 @@
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/login.css"/>
+<link rel="stylesheet" href="~/css/forgetpassword.css">
+<div class="body">
+    <div class="title">
+        Đăng ký
+    </div>
+    <div class="body__main">
+        <p class="title">Đăng Ký</p>
+        <form class="login-form">
+            <div class="login-form__row login-form__row--normal">
+                <input name="Email" type="text" placeholder="Email">
+            </div>
+            <div class="login-form__row login-form__row--normal">
+                <input name="LastName" type="text" placeholder="Họ">
+            </div>
+            <div class="login-form__row login-form__row--normal">
+                <input name="FirstName" type="text" placeholder="Tên">
+            </div>
+            <div class="login-form__row login-form__row--custom">
+                <div>
+                    <input name="RadioMale" type="checkbox" checked/>
+                    Nam
+                    <span style="margin-left: 10px;"></span>
+                    <input name="RadioFemale" type="checkbox"/>
+                    Nữ
+                </div>
+            </div>
+            <div class="login-form__row login-form__row--normal">
+                <input name="BirthDay" type="date" placeholder="Ngày sinh">
+            </div>
+            <div class="login-form__row login-form__row--normal">
+                <input name="Phone" type="text" placeholder="Số điện thoại">
+            </div>
+            <div class="login-form__row login-form__row--normal">
+                <input name="Password" type="password" placeholder="Mật khẩu">
+            </div>
+            <div class="login-form__row login-form__row--normal">
+                <input name="RepeatPassword" type="password" placeholder="Nhập lại mật khẩu">
+            </div>
+            <button type="button" name="register">Đăng ký</button>
+        </form>
+    </div>
+</div>
+<script type="module" src="~/js/register/Register.js"></script>

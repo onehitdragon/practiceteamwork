@@ -1,0 +1,12 @@
+.body > .body__main .body-left--ani{
+    transform-origin: center left;
+    animation: body-left-ani 1s ease-in 1;
+}
+@keyframes body-left-ani {
+    0%{
+        transform: translateX(250px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
