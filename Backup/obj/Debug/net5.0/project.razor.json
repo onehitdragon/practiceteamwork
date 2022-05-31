@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "FilePath": "d:\\3_2\\practiceteam\\report\\finalreport\\project\\Backup\\project.csproj",
+=======
+  "FilePath": "d:\\3_2\\practiceteam\\project\\Backup\\project.csproj",
+>>>>>>> e3c889cf802cfb73e6feee1a8baba69ddf3c77fd
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",

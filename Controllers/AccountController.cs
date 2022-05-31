@@ -7,7 +7,10 @@ using project.MyTool;
 using project.DataService;
 using project.Repository;
 using project.Email;
+<<<<<<< HEAD
 using System.Threading.Tasks;
+=======
+>>>>>>> e3c889cf802cfb73e6feee1a8baba69ddf3c77fd
 
 namespace project.Controllers{
     public class AccountController : Controller{

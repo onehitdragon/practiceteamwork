@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = project
+<<<<<<< HEAD
 build_property.ProjectDir = d:\3_2\practiceteam\report\finalreport\project\Backup\
+=======
+build_property.ProjectDir = d:\3_2\practiceteam\project\Backup\
+>>>>>>> e3c889cf802cfb73e6feee1a8baba69ddf3c77fd
