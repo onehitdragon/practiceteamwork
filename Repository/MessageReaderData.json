@@ -1,1 +1,111 @@
-[]
+[
+  {
+    "Id": 4,
+    "Title": "Nguyễn B",
+    "CreatorId": 1,
+    "Participants": [
+      {
+        "Id": 1,
+        "AvatarUrl": "/img/layout/default-avatar.jpg",
+        "LastName": "Nguyễn",
+        "FirstName": "B",
+        "BirthDay": "1997-01-15T00:00:00",
+        "Gender": true,
+        "Phone": "08684242451"
+      },
+      {
+        "Id": 3,
+        "AvatarUrl": "/img/layout/default-avatar.jpg",
+        "LastName": "Trần",
+        "FirstName": "C",
+        "BirthDay": "1999-05-23T00:00:00",
+        "Gender": false,
+        "Phone": "08614242451"
+      }
+    ],
+    "Messages": [
+      {
+        "Id": 8,
+        "Sender": {
+          "Id": 1,
+          "AvatarUrl": "/img/layout/default-avatar.jpg",
+          "LastName": "Nguyễn",
+          "FirstName": "B",
+          "BirthDay": "1997-01-15T00:00:00",
+          "Gender": true,
+          "Phone": "08684242451"
+        },
+        "TypeMessage": 0,
+        "Content": "A",
+        "FileAttachUrl": "",
+        "CreateAt": "2022-05-31T09:31:31"
+      },
+      {
+        "Id": 9,
+        "Sender": {
+          "Id": 1,
+          "AvatarUrl": "/img/layout/default-avatar.jpg",
+          "LastName": "Nguyễn",
+          "FirstName": "B",
+          "BirthDay": "1997-01-15T00:00:00",
+          "Gender": true,
+          "Phone": "08684242451"
+        },
+        "TypeMessage": 1,
+        "Content": ":no-violence.png",
+        "FileAttachUrl": "https://192.168.1.153:5001/img/icons/no-violence.png",
+        "CreateAt": "2022-05-31T09:31:47"
+      },
+      {
+        "Id": 10,
+        "Sender": {
+          "Id": 3,
+          "AvatarUrl": "/img/layout/default-avatar.jpg",
+          "LastName": "Trần",
+          "FirstName": "C",
+          "BirthDay": "1999-05-23T00:00:00",
+          "Gender": false,
+          "Phone": "08614242451"
+        },
+        "TypeMessage": 1,
+        "Content": ":velociraptor.png",
+        "FileAttachUrl": "https://192.168.1.153:5001/img/icons/velociraptor.png",
+        "CreateAt": "2022-05-31T09:31:59"
+      },
+      {
+        "Sender": {
+          "Id": 1,
+          "AvatarUrl": "/img/layout/default-avatar.jpg",
+          "LastName": "Nguyễn",
+          "FirstName": "B",
+          "BirthDay": "1997-01-15T00:00:00",
+          "Gender": true,
+          "Phone": "08684242451"
+        },
+        "TypeMessage": 1,
+        "Readers": [],
+        "Content": ":no-war.png",
+        "FileAttachUrl": "https://192.168.1.153:5001/img/icons/no-war.png",
+        "CreateAt": "2022-05-31T10:03:52",
+        "loading": true
+      },
+      {
+        "Sender": {
+          "Id": 1,
+          "AvatarUrl": "/img/layout/default-avatar.jpg",
+          "LastName": "Nguyễn",
+          "FirstName": "B",
+          "BirthDay": "1997-01-15T00:00:00",
+          "Gender": true,
+          "Phone": "08684242451"
+        },
+        "TypeMessage": 1,
+        "Readers": [],
+        "Content": "02-Ho-so-nhom.docx",
+        "FileAttachUrl": "UserData\\0c2d3689-cb5d-413f-a39a-11359967ea31_02-Ho-so-nhom.docx",
+        "CreateAt": "2022-05-31T10:08:41",
+        "loading": true
+      }
+    ]
+  }
+]
