@@ -389,6 +389,7 @@
 }
 .body-left__conversations > .conversation-item > .group--avatar > .avatar{
     width: 25px;
+    height: 25px;
 }
 .body-left__conversations > .conversation-item > .group--avatar > .amount{
     width: 25px;

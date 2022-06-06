@@ -39,12 +39,6 @@ class Conversation{
                 <p class="name">${this.fullname}</p>
                 <p class="last-mes"></p>
             `;
-            statusAreaElement.innerHTML = `
-                <p class="time">
-                    <i class="fa-solid fa-check"></i>
-                    <span></span>
-                </p>
-            `;
         }
         else{
             avatarAreaElement.classList.add('group--avatar');
@@ -68,6 +62,12 @@ class Conversation{
                 <p class="last-mes"></p>
             `;
         }
+        statusAreaElement.innerHTML = `
+            <p class="time">
+                <i class="fa-solid fa-check"></i>
+                <span></span>
+            </p>
+        `;
 
         conversationElement.appendChild(avatarAreaElement);
         conversationElement.appendChild(infoAreaElement);
